@@ -1,0 +1,62 @@
+.how-to-buy {
+    padding: 20px;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cartoon style font */
+    text-align: center;
+    height: 100vh;
+    color: #000;
+    border: 40px solid transparent; /* Placeholder for border width */
+    border-image: url('/rmBack.png') 40 round; /* Adjust according to your image */
+    border-radius: 15px; /* Rounded corners if desired */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    max-width: 80vw;
+    margin: 20px auto;
+    background-color: aqua;
+    background-image: url('/King of hill graphic 2.jpg')  no-repeat center center/cover;
+}
+
+.step {
+    margin: 20px auto;
+    position: relative;
+    border: 1px solid black;
+    width: 30vw;
+    background-color: white;
+}
+
+.step h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step label {
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+.step input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+}
+
+.step input[type="checkbox"]:checked::before {
+    content: '✔';
+    color: green;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.complete-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border: 5px solid #000; /* Cartoon-style border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

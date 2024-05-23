@@ -1,0 +1,47 @@
+/* GalleryComponent.css */
+
+.gallery-container {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+   
+    height: 150px; /* Adjust for desired height */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.gallery {
+    display: flex;
+    width: calc(200% + 20px); /* Double the number of images to create a seamless loop */
+    animation: scroll 20s linear infinite; /* Adjust animation duration for desired speed */
+}
+
+.gallery-image {
+    flex: 0 0 auto;
+    width: 10%; /* Adjust to make images smaller */
+    height: auto;
+    transition: filter 0.3s, box-shadow 0.3s;
+    background: none; /* Ensure no background is applied */
+}
+
+.gallery-image:hover {
+    filter: drop-shadow(0 0 10px red); /* Change red to the desired color */
+}
+
+.gallery-image:hover:nth-child(2n) {
+    filter: drop-shadow(0 0 10px blue);
+}
+
+.gallery-image:hover:nth-child(3n) {
+    filter: drop-shadow(0 0 10px green);
+}
+
+.gallery-image:hover:nth-child(4n) {
+    filter: drop-shadow(0 0 10px yellow);
+}
+
+.gallery-image:hover:nth-child(5n) {
+    filter: drop-shadow(0 0 10px purple);
+}

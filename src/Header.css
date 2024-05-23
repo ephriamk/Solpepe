@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header .logo .logo-image {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    
+}
+
+.header nav ul li {
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+    .header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,113 @@
+/* MainContent.css */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px); /* Adjust height to account for the gallery */
+    width: 100vw;
+    background: url('/LargePFP.png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding-bottom: 100px; /* Padding to prevent content from being hidden behind the gallery */
+}
+
+.main-content .content {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.filler {
+    height: 100vh;
+    background: url('/SecondPade.png') no-repeat center center/cover;
+
+}
+.main-content .content p {
+    font-size: 24px;
+}
+
+.main-content .content button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #FF4136;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .main-content .content p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content .content p {
+        font-size: 16px;
+    }
+}
+
+/* GalleryComponent.css */
+.gallery-container {
+    width: 100%;
+    
+    padding: 20px 0; /* Padding for spacing */
+    height: 200px; /* Adjust for desired height */
+}
+
+.gallery {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    height: 40vh;
+    
+}
+
+.gallery-image {
+    flex: 0 0 auto;
+    width: 15%; /* Adjust to make images smaller */
+    height: auto;
+    margin: 0 10px; /* Adjust based on desired spacing */
+    transition: filter 0.3s, box-shadow 0.3s;
+}
+
+.gallery-image:hover {
+    filter: drop-shadow(0 0 20px red); /* Change red to the desired color */
+}
+
+.gallery-image:hover:nth-child(2n) {
+    filter: drop-shadow(0 0 20px blue);
+}
+
+.gallery-image:hover:nth-child(3n) {
+    filter: drop-shadow(0 0 20px green);
+}
+
+.gallery-image:hover:nth-child(4n) {
+    filter: drop-shadow(0 0 20px yellow);
+}
+
+.gallery-image:hover:nth-child(5n) {
+    filter: drop-shadow(0 0 20px purple);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* Translate by half the width to create a loop */
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-image {
+        width: 25%; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-image {
+        width: 50%; /* Adjust for smaller screens */
+    }
+}
