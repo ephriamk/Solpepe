@@ -11,7 +11,7 @@ const ImageGallery = () => {
   return (
     <div className="gallery-container">
       <div className="gallery-content">
-        <img
+      <img
           src="./Sticker 1.png"
           className="image-1"
           alt="Image 1"
@@ -21,7 +21,7 @@ const ImageGallery = () => {
           src="./Sticker 2.png"
           className="image-2"
           alt="Image 2"
-          onClick={() => playAudio('audioPlayer2')}
+          onClick={() => playAudio('audioPlayer5')}
         />
         <img
           src="./Sticker 3.png"
@@ -39,7 +39,7 @@ const ImageGallery = () => {
           src="./Sticker 5.png"
           className="image-5"
           alt="Image 5"
-          onClick={() => playAudio('audioPlayer5')}
+          onClick={() => playAudio('audioPlayer2')}
         />
         {/* Repeat images to ensure seamless scrolling */}
         <img
@@ -64,13 +64,13 @@ const ImageGallery = () => {
           src="./Sticker 4.png"
           className="image-4"
           alt="Image 4"
-          onClick={() => playAudio('audioPlayer2')}
+          onClick={() => playAudio('audioPlayer4')}
         />
         <img
           src="./Sticker 5.png"
           className="image-5"
           alt="Image 5"
-          onClick={() => playAudio('audioPlayer5')}
+          onClick={() => playAudio('audioPlayer2')}
         />
       </div>
       <audio id="audioPlayer1" src="./believeIt.mp3" />
