@@ -7,6 +7,7 @@
     justify-content: center;
     height: calc(100vh - 100px); /* Adjust height to account for the gallery */
     width: 100vw;
+    height: 180vh;
     background: url('/LargePFP.webp') no-repeat center center/cover;
     color: white;
     text-align: center;
