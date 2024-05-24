@@ -52,7 +52,7 @@ const ImageGallery = () => {
           src="./Sticker 2.png"
           className="image-2"
           alt="Image 2"
-          onClick={() => playAudio('audioPlayer2')}
+          onClick={() => playAudio('audioPlayer5')}
         />
         <img
           src="./Sticker 3.png"
@@ -64,7 +64,7 @@ const ImageGallery = () => {
           src="./Sticker 4.png"
           className="image-4"
           alt="Image 4"
-          onClick={() => playAudio('audioPlayer4')}
+          onClick={() => playAudio('audioPlayer2')}
         />
         <img
           src="./Sticker 5.png"
@@ -74,10 +74,10 @@ const ImageGallery = () => {
         />
       </div>
       <audio id="audioPlayer1" src="./believeIt.mp3" />
-      <audio id="audioPlayer2" src="./sound2.mp3" />
+      <audio id="audioPlayer2" src="./tanjiro.mp3" />
       <audio id="audioPlayer3" src="./goku.mp3" />
       <audio id="audioPlayer4" src="./luffy.mp3" />
-      <audio id="audioPlayer5" src="./sound5.mp3" />
+      <audio id="audioPlayer5" src="./sakura.mp3" />
     </div>
   );
 };

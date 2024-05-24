@@ -7,7 +7,7 @@
     justify-content: center;
     height: calc(100vh - 100px); /* Adjust height to account for the gallery */
     width: 100vw;
-    background: url('/LargePFP.png') no-repeat center center/cover;
+    background: url('/LargePFP.webp') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding-bottom: 100px; /* Padding to prevent content from being hidden behind the gallery */
@@ -20,7 +20,7 @@
 }
 .filler {
     height: 100vh;
-    background: url('/SecondPade.png') no-repeat center center/cover;
+    background: url('/Bottom.webp') 
 
 }
 .main-content .content p {

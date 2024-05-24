@@ -1,46 +1,45 @@
-import React from 'react';
-import '../../src/Tokenomics.css';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import './Tokenomics.css';
 
 const Tokenomics = () => {
-    return (
-        <div id="tokenomics" className="tokenomics">
-            <div className="tokenomics-content">
-                <div className='road'>
-                    <h1>Roadmap</h1>
-                </div>
-                
-                <div className="gallery">
-                    <div className="gallery-item one">
-                        <h3 className='one'>Pumpfun </h3>
-                        <a href="https://pump.fun" target="_blank" rel="noopener noreferrer">
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const slides = [
+    { src: './Pump pill graphic 2.jpg', alt: 'Slide 1', caption: 'Blast through Pump Fun' },
+    { src: './Raydium graphic 2.jpg', alt: 'Slide 2', caption: 'DEX Banner Pre-Paid AND DEX ADDS PRE PAID!' },
+    { src: './King.jpg', alt: 'Slide 3', caption: '500K Market Cap and DEX Trending' },
+    { src: '/Pfp_hires 2.jpg', alt: 'Slide 4', caption: 'This is Slide 4' },
+  ];
 
-                            <img src="/Pump pill graphic 2.jpg" alt="Tokenomics 1" className="gallery-image" />
-                        </a>
-                        
-                    </div>
-                    <div className="gallery-item raydium">
-                        <h3>Raydium</h3>
-                        <a href="https://raydium.io/swap/" target="_blank" rel="noopener noreferrer">
-                            <img src="/Raydium graphic 2.jpg" alt="Tokenomics 2" className="gallery-image" />
-                        </a>
-                    </div>
-                    <div className="gallery-item solana">
-                        <h3>1M Market Cap</h3>
-                        <a href="https://example.com/marketcap" target="_blank" rel="noopener noreferrer">
-                            <img src="/King.jpg" alt="Tokenomics 3" className="gallery-image" />
-                        </a>
-                    </div>
-                    <div className="gallery-item new-item">
-                        <h3>1 Billion Market Cap!!!!</h3>
-                        <a href="https://example.com/newitem" target="_blank" rel="noopener noreferrer">
-                            <img src="Pfp_hires 2.jpg" alt="Tokenomics 4" className="gallery-image" />
-                        </a>
-                    </div>
-                </div>
-            </div>
+  const nextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide - 1 + slides.length) % slides.length);
+  };
+
+  return (
+    <div className="tokenomics-container">
+      <h2 className="h2Large">ROADMAP</h2>
+      <div className="slider">
+        <button className="prev" onClick={prevSlide}>❮</button>
+        <div className="slide">
+          <img src={slides[currentSlide].src} alt={slides[currentSlide].alt} className="slide-image" />
         </div>
-    );
+        <button className="next" onClick={nextSlide}>❯</button>
+      </div>
+      <div className="caption">{slides[currentSlide].caption}</div>
+      <div className="dots">
+        {slides.map((_, index) => (
+          <span
+            key={index}
+            className={`dot ${currentSlide === index ? 'active' : ''}`}
+            onClick={() => setCurrentSlide(index)}
+          ></span>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Tokenomics;

@@ -9,6 +9,7 @@
   .gallery-content {
     display: inline-flex;
     animation: scroll 20s linear infinite;
+    height: 13vh;
   }
   
   .gallery-content img {
@@ -17,6 +18,7 @@
     padding-top: 40px;
     transform: scale(1);
     transition: filter 0.3s, box-shadow 0.3s;
+    margin-right: 10vw;
   }
   
   .image-1:hover {

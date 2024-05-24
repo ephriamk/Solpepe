@@ -3,8 +3,8 @@ import './GalleryComponent.css';
 
 const GalleryComponent = () => {
     return (
-        <div className="gallery-container">
-            <div className="gallery">
+        <div className="gallery-containerMain">
+            <div className="galleryMain">
                 <img src="/Sticker 1.png" alt="Sticker 1" className="gallery-image" />
                 <img src="/Sticker 2.png" alt="Sticker 2" className="gallery-image" />
                 <img src="/Sticker 3.png" alt="Sticker 3" className="gallery-image" />
