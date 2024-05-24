@@ -1,6 +1,9 @@
 /* MainContent.css */
 
+
 .main-content {
+    cursor:url('/file.png'), auto;
+
     display: flex;
     flex-direction: column;
     align-items: center;

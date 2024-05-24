@@ -3,7 +3,7 @@
   margin: auto;
   text-align: center;
   height: 100vh;
-  background: url('LargePFP.webp');
+  background-color: #85ace2;
 }
 
 .slider {
@@ -57,7 +57,7 @@
 }
 
 .prev {
-  left: 0;
+  left: 10vw;
 }
 
 .next {
@@ -84,7 +84,7 @@
   background-color: #717171;
 }
 .h2Large {
-  background: linear-gradient(90deg, #4d747d, #770b72);
+  background: linear-gradient(90deg, #4d747d, #0bc4d4);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
