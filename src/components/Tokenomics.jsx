@@ -15,7 +15,7 @@ const Tokenomics = () => {
     {
       src: "./Raydium graphic 2.jpg",
       alt: "Slide 2",
-      caption: "DEX Banner Pre-Paid AND DEX ADDS PRE PAID!",
+      caption: "DEX Banner Pre-Paid AND DEX ADS PRE PAID!",
       animation: "rumble2",
     },
     {
